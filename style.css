@@ -1,0 +1,211 @@
+@import 'utilities.css';
+:root{
+--primary: rgb(242, 235, 27);
+--bgDark: rgb(0, 0, 0);
+--white: rgb(250, 250, 250);
+--secondary: rgb(0, 59, 50);
+--bgLight: rgb(15, 2, 2);
+--third: rgb(223, 207, 35);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  }
+  header{
+  background-color: var(--bgDark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+  }
+  header nav .left a{
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all .2s ease;
+  }
+  header nav .left a:hover{
+  color: var(--primary);
+  }
+  header nav {
+  padding: 2rem 0;
+  }
+  header nav .logo{
+  margin-right: 3rem;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    }
+    .container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
+    .hero{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    }
+    .hero .left img{
+    width: 90px;
+    margin-right: 50px;
+    }
+    .hero .left h1{
+    font-size: 1.6rem;
+    margin-top: 50px;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    }
+    .hero .right {
+    color: var(--white);
+    margin-top: -7rem;
+    }
+    .hero .right h6{
+    font-size: 3.4rem;
+    text-align: center;
+    margin: 90px;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    }
+    .hero .right h1{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    }
+    .hero .right h1 span{
+    color: var(--primary);
+    }
+    .hero .right p{
+    line-height: 1.9;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-right: 240px;
+    margin-left: 240px;
+    margin-bottom: 2rem;
+    }
+    section{
+      padding: 6rem;
+      }
+      section.about h1{
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 600;
+      }
+      section.about h1 span{
+      color: var(--primary);
+      }
+      section.about h3{
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      }
+      section.about p{
+      font-family: 'Lato', sans-serif;
+      color: var(--secondary);
+      line-height: 1.9rem;
+      text-align: justify;
+      margin-bottom: 2rem;
+      }
+      
+      section.about .socials{
+      display: flex;
+      }
+      section.about .socials a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      margin-right: 2.4rem;
+      border-radius: 50%;
+      }
+      section.about .socials a:hover{
+      background: var(--white);
+      }
+
+      section.services{
+        background: rgb(17, 17, 17)
+        }
+        .services-head{
+        color: rgb(10, 9, 9);
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 0.5rem;
+        color: var(--primary);
+        }
+        .services-head + p{
+        color: var(--white);
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        margin: 10px;
+        text-align: center;
+        margin-bottom: 6rem;
+        font-weight: 400;
+        }
+        .card img{
+        width: 50px;
+        background:white;
+        }
+        section.services .card-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2rem;
+        }
+        section.services .card-grid .card{
+        background: var(--white);
+        padding: 3rem 2rem;
+        position: relative;
+        text-align: center;
+        transition: all .2s ease;
+        }
+        section.services .card-grid .card img{
+        position: absolute;
+        top: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var();
+        }
+        section.services .card-grid .card h2{
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        }
+        section.services .card-grid .card p{
+        font-family: 'Lato', sans-serif;
+        text-align: justify;
+        color: var(--seconday);
+        line-height: 1.6;
+        }
+        section.services .card-grid .card .button{
+          background-color: var(--bgDark);
+          color: rgb(27, 3, 3);
+          text-decoration: none;
+          border: 2px solid transparent;
+          font-weight: bold;
+          padding: 9px 22px;
+          margin-top: 100px;
+          border-radius: 30px;
+          transition: .4s; 
+        }
+        section.services .card-grid .card .button:hover{
+          background-color: var(--bgDark);
+          border: 2px solid;
+          cursor: pointer;
+        }
+        section.services .card-grid .card:hover{
+        background: var(--third);
+        }
+        section.services .card-grid .card:hover h2{
+        color: var(--white);
+        }
+        section.services .card-grid .card:hover p{
+        color: var(--white);
+        }
+    
