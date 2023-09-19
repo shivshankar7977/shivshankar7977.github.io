@@ -10,3 +10,5 @@ COPY ./utilities.css /usr/local/apache2/htdocs/css/
 
 # Copy all image files to an "images" directory in the Apache document root
 COPY ./images/ /usr/local/apache2/htdocs/images/
+
+CMD ["httpd-foreground"]
